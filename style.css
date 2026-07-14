@@ -218,6 +218,14 @@ label {
 }
 
 
+.image{
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
 /* input fields */
 input[type="text"],
 input[type="email"],
