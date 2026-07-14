@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="src/favicon.png">
     <script src="script.js" defer></script>
     <title>Sign Up Form</title>
 </head>
@@ -20,20 +21,24 @@
                 <fieldset>
                     <legend>Personal Information</legend>
                     <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" minlength="3" maxlength="20" required>
+                    <div class="error-message" id="first-name-error"></div>
 
                      <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" minlength="3" maxlength="20" required>
+                    <div class="error-message" id="last-name-error"></div>
 
                   <label for="email">Email:</label>
                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <div class="error-message" id="email-error"></div>
 
                       <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password" minlength="6" maxlength="20" required>
+                <div class="error-message" id="password-error"></div>
              </fieldset>
             <button id="signUpBtn" type="submit">Sign Up</button>
             <div  class="login-link">
-                <p>Already have an account? <a href="https://www.youtube.com/watch?v=E4aOX_1nDHA" target="_blank" rel="noopener noreferrer">Login</a></p>
+                <p>Already have account? <a href="https://www.youtube.com/watch?v=E4aOX_1nDHA" target="_blank" rel="noopener noreferrer">Login</a></p>
 
             </div>
         </form>

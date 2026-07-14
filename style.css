@@ -135,12 +135,16 @@ body {
   width: 100%;
   max-width: 90vw;
   background: var(--surface-color);
-  padding: 40px;
+  padding-bottom: 40px;
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 18px;
   transition: .3s ease;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  min-width: 400px;
 }
 
 .left-section {
@@ -251,6 +255,15 @@ button {
   cursor: pointer;
   transition: .25s ease;
   margin-top: 20px;
+  scale: 1;
+}
+
+button:hover {
+  background: var(--primary-hover);
+  scale: 1.05;
+}
+button:active {
+  scale: 0.90;
 }
 
 .switch-container {
@@ -285,4 +298,11 @@ a {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 0.7rem;
+  margin-top: 5px;
+  display: none;
 }
