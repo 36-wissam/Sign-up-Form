@@ -9,33 +9,42 @@
 </head>
 <body>
     <div class="signup-container">
-        <div class="switch-container">
+        
+
+        <div class="left-section">
+            <div class="switch-container">
             <button id="switchButton">Dark</button>
         </div>
+            <h1>Sign Up</h1>
+            <form id="signup-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
 
-        <h1>Sign Up</h1>
+                     <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
 
-        <form id="signup-form">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                  <label for="email">Email:</label>
+                   <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-                <label for="password">Password:</label>
+                      <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password" minlength="6" maxlength="20" required>
-            </fieldset>
+             </fieldset>
             <button id="signUpBtn" type="submit">Sign Up</button>
             <div  class="login-link">
                 <p>Already have an account? <a href="https://www.youtube.com/watch?v=E4aOX_1nDHA" target="_blank" rel="noopener noreferrer">Login</a></p>
 
             </div>
         </form>
+        </div>
+        <div class="right-section">
+            <div class="image">
+                <img src="src/login-img.png" alt="Sign Up Image">
+            </div>
+        </div>
+        
+        
     </div>
 
 
