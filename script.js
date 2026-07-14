@@ -4,6 +4,11 @@ const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
+const zip = document.getElementById("zip");
+const address = document.getElementById("address");
+const city = document.getElementById("city");
+const state = document.getElementById("state");
+const sex = document.querySelectorAll('input[name="sex"]');
 
 
 // First Name validation
@@ -58,6 +63,55 @@ password.addEventListener("input", function () {
     }
 });
 
+// Zip Code validation
+zip.addEventListener("input", function () {
+    const error = document.getElementById("zip-error");
+    const pattern = /^\d{5}$/;
+
+    if (!pattern.test(zip.value)) {
+        error.textContent = "Enter a valid 5-digit zip code.";
+        error.style.display = "block";
+    } else {
+        error.style.display = "none";
+    }
+});
+
+
+// Address validation
+address.addEventListener("input", function () {
+    const error = document.getElementById("address-error");
+
+    if (address.value.trim() === "") {
+        error.textContent = "Address cannot be empty.";
+        error.style.display = "block";
+    } else {
+        error.style.display = "none";
+    }
+});
+
+// City validation
+city.addEventListener("input", function () {
+    const error = document.getElementById("city-error");
+
+    if (city.value.trim() === "") {
+        error.textContent = "City cannot be empty.";
+        error.style.display = "block";
+    } else {
+        error.style.display = "none";
+    }
+});
+
+// State validation
+state.addEventListener("input", function () {
+    const error = document.getElementById("state-error");
+
+    if (state.value.trim() === "") {
+        error.textContent = "State cannot be empty.";
+        error.style.display = "block";
+    } else {
+        error.style.display = "none";
+    }
+});
 
 // Dark Mode
 switchButton.addEventListener("click", () => {

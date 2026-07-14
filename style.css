@@ -144,8 +144,9 @@ body {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  min-width: 400px;
+  min-width: 350px;
 }
+
 
 .left-section {
   flex: 1;
@@ -182,6 +183,14 @@ h1 {
 }
 
 
+form {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 
 fieldset {
@@ -266,14 +275,20 @@ button:active {
   scale: 0.90;
 }
 
+.btnss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+
 .switch-container {
   max-width: 100%;
-  position: sticky;
-
 }
 
 #switchButton {
-  width: 70px;
+  width: 100%;
   padding: 12px;
   background: var(--primary-color);
   color: var(--button-text);
@@ -286,6 +301,19 @@ button:active {
   
 }
 
+#signUpBtn {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-color);
+  color: var(--button-text);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  
+}
 .login-link {
     margin-top: 15px;
   text-align: center;
@@ -305,4 +333,68 @@ a {
   font-size: 0.7rem;
   margin-top: 5px;
   display: none;
+}
+
+.checkbox-terms {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  display:flex;
+  gap: 0.5em;
+
+}
+
+select{
+  width: 100%;
+  padding: 12px;
+  background: var(--input-bg);
+  color: var(--text-color);
+  border: 2px solid var(--input-border);
+  border-radius: 10px;
+  transition: .25s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--input-focus);
+}
+
+select option {
+  background: var(--input-bg);
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+select:user-invalid {
+  border-color: #dc2626;
+
+}
+select:valid {
+  border-color: #16a34a;
+
+}
+
+.sex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--primary-color);
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.8rem;
 }

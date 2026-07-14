@@ -13,9 +13,7 @@
         
 
         <div class="left-section">
-            <div class="switch-container">
-            <button id="switchButton">Dark</button>
-        </div>
+            
             <h1>Sign Up</h1>
             <form id="signup-form">
                 <fieldset>
@@ -28,6 +26,13 @@
                     <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" minlength="3" maxlength="20" required>
                     <div class="error-message" id="last-name-error"></div>
 
+                    <div class="sex">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="sex" value="male">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="sex" value="female">
+                    </div>
+
                   <label for="email">Email:</label>
                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     <div class="error-message" id="email-error"></div>
@@ -35,22 +40,60 @@
                       <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password" minlength="6" maxlength="20" required>
                 <div class="error-message" id="password-error"></div>
+                <div class="checkbox-terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="https://www.youtube.com/watch?v=E4aOX_1nDHA" target="_blank" rel="noopener noreferrer">Terms and Conditions</a></label>
+                </div>
              </fieldset>
-            <button id="signUpBtn" type="submit">Sign Up</button>
+
+             <fieldset id="address-fieldset">
+                
+                <legend>Address Information</legend>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                <div class="error-message" id="address-error"></div>
+
+                <label for="city">City:</label>
+                <select name="City" id="city" required>
+                    <option value="">Select a city</option>
+                    <option value="Sulaymaniyah">Sulaymaniyah</option>
+                    <option value="Anbar">Anbar</option>
+                    <option value="Baghdad">Baghdad</option>
+                </select>
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="Enter your state" required>
+                <div class="error-message" id="state-error"></div>
+
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip" placeholder="Enter your zip code" pattern="\d{5}" required>
+                <div class="error-message" id="zip-error"></div>    
+             </fieldset>
+            <div class="btnss">
+                <button id="signUpBtn" type="submit">Sign Up</button>
+                <div class="switch-container">
+                    <button type="button" id="switchButton">Dark</button>
+                </div>
+            </div>
+
             <div  class="login-link">
-                <p>Already have account? <a href="https://www.youtube.com/watch?v=E4aOX_1nDHA" target="_blank" rel="noopener noreferrer">Login</a></p>
+                <p>Already have account? <a href="https://youtu.be/ku5k9a3xBiY?si=d-rs2Yd2xZOwDeWz" target="_blank" rel="noopener noreferrer">Login</a></p>
 
             </div>
         </form>
         </div>
         <div class="right-section">
             <div class="image">
-                <img src="src/login-img.png" alt="Sign Up Image">
+                <img src="src/login-img.png" alt="Sign Up Image" height="100%" width="100%">
             </div>
         </div>
         
         
     </div>
+
+    <footer>
+        <p>&copy; 2026 Wissam. All rights reserved.</p>
+    </footer>
 
 
 </body>
